@@ -17,3 +17,17 @@ we can hand these findings over to the bank in order for them to start utilizing
 the decision tree model as a plug-and-play model that is ready to go since we
 have already trained it on their past data. This will hopefully yield higher success
 when it comes to getting customers to subscribe to a term deposit. 
+
+
+Below are the results of my modeling:
+
+![knn_conf_matrix](images/knn_conf_matrix.jpg)
+
+![dtree_conf_matrix](images/dtree_conf_matrix.jpg)
+
+![svm_conf_matrix](images/svm_conf_matrix.jpg)
+
+Even though the models all performed relatively similarly, the decision tree just
+narrowly beats out the other two models (after hyperparameter tuning). The train
+time for the decision tree was also not that great, leading me to recommend the
+decision tree as the best model for our Portuguese bank to use.
